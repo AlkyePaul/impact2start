@@ -12,23 +12,61 @@
 <html>
 <body>
 
-<header class="mainmenu">
-  <nav>
-    <menu>
-        <li> Progetti</li>
-        <li> Chi sono</li>
-        <li> Contatti</li>
-        <li> Bonus</li>
+<header class="menu-container">
+  <nav class="menu-desktop no-mobile">
+    <menu class="menu-desktop no-mobile">
+        <li class="item-menu-desktop"> <a href="/#">Progetti </a></li>
+        <li class="item-menu-desktop"> <a href="/#">Chi sono</a></li>
+        <li class="item-menu-desktop"> <a href="/#">Contatti</a></li>
+        <li class="item-menu-desktop"> <a href="/#">Bonus</a></li>
     </menu>
+  </nav>
+  
+  <nav class="menu-mobile mobile-only">
+    <menu for="menu-toggle" id="menu-mobile" class="mobile-only hamburger">menu<br>
+      <span class="hamburger-icon">
+        &#9776
+      </span>
+      <div class="dropdown-menu">
+      <li class='date dropdown-item-mobile'><a href="/">Progetti</a></li>
+      <li class='strumenti dropdown-item-mobile'><a href="/">Chi sono</a></li>
+      <li class='me dropdown-item-mobile'><a href="/">Contatti</a></li>
+    </div>
+  </menu>
   </nav>  
 </header>
 
 
-<header class="herobanner">
+<header class="hero-banner">
+
+  <div class="header-background-video">
+    <video muted loop autoplay class="background-video">
+      <source src="../media/blackastract1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="header-title">
+    <h1 class="header-title"> PAOLO CONFALONIERI</h1>
+    <h2>digital marketing e web design</h2>
+  </div>
+  <div class='header'>
+    <div class="social-icons">
+      <div class='social'><img src='../media/fb.png' /></div>
+
+      <div class='social'><img src='../media/ig.png' /></div>
+
+      <div class='social'><img src='../media/pin.png' /></div>
+    </div>
+
+    <div class='CTA typewriter'>
+      <p class="typewriter typewriter-text">Digitalizza la tua impresa e rendi efficace la tua presenza online</p>
+    </div>
+    <!-- <div class='logo'><img src='../media/logo.svg' class="logo"></div> -->
+  </div>
 
 </header>
 
 <article class="section progetti">
+
 
 </article>
 

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  cursor: pointer;
+}
+* h1, * h2, * h3, * li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu-container {
+  display: block;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  border-bottom: solid 1px grey;
+}
+.menu-container .menu-desktop {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-container .menu-desktop a {
+  text-decoration: none;
+  color: black;
+}
+.menu-container .menu-desktop li {
+  padding: 25px 50px;
+  list-style: none;
+}
+.menu-container .menu-desktop li li:hover {
+  padding: 25px 50px;
+  border-bottom: 3px solid green;
+}
+.menu-container .menu-mobile .hamburger {
+  display: block;
+  position: fixed;
+  top: 15px;
+  right: 80px;
+  z-index: 1000;
+  font-size: 15px; /* Dimensione dell'icona */
+  color: black;
+  text-align: center;
+}
+.menu-container .menu-mobile .hamburger span {
+  text-align: center;
+  font-size: 30px;
+}
+.menu-container .menu-mobile .dropdown-menu {
+  display: none;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu {
+  display: block;
+  cursor: pointer;
+  position: inherit;
+  background-color: green;
+  z-index: 1000;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile {
+  list-style: none;
+  margin-right: 0px auto;
+  border-bottom: 1px white solid;
+  font-size: 1rem;
+  text-indent: 1px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a {
+  color: white;
+  text-decoration: none;
+}
+
+/* responsive design*/
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .no-mobile {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
