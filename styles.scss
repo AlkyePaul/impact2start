@@ -1,0 +1,18 @@
+@import "config";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.mainmenu{
+    height: 75px;
+    width: 100%;
+    border-bottom: solid 1 $border-color;
+
+    nav{
+        
+    }
+}
