@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-    <link rel='stylesheet' href='bootstrap.min.css'/>
+    <link rel='stylesheet' href='css/bootstrap.min.css'/>
     <link rel='stylesheet' href='styles.css'/>
   </head>
-
 <html>
 <body>
 
@@ -23,66 +22,133 @@
   </nav>
   
   <nav class="menu-mobile mobile-only">
-    <menu for="menu-toggle" id="menu-mobile" class="mobile-only hamburger">menu<br>
+    <menu for="menu-toggle" id="menu-mobile" class="mobile-only hamburger">
       <span class="hamburger-icon">
         &#9776
       </span>
       <div class="dropdown-menu">
-      <li class='date dropdown-item-mobile'><a href="/">Progetti</a></li>
-      <li class='strumenti dropdown-item-mobile'><a href="/">Chi sono</a></li>
+      <li class='date dropdown-item-mobile'><a href="file:///C:/Users/paolo/Documents/GitHub/impact2start/index.html/progetti">Progetti</a></li>
+      <li class='strumenti dropdown-item-mobile'><a href="/#chisono">Chi sono</a></li>
       <li class='me dropdown-item-mobile'><a href="/">Contatti</a></li>
+      <li class='me dropdown-item-mobile'><a href="/">Bonus</a></li>
     </div>
   </menu>
   </nav>  
 </header>
 
-
+<div class="page-content">
 <header class="hero-banner">
 
-  <div class="header-background-video">
+  <!--<div class="header-background-video">
     <video muted loop autoplay class="background-video">
-      <source src="../media/blackastract1.mp4" type="video/mp4">
+      <source src="./media/blackastract1.mp4" type="video/mp4">
     </video>
-  </div>
-  <div class="header-title">
+  </div> -->
+  <div class="hero-content">
     <h1 class="header-title"> PAOLO CONFALONIERI</h1>
     <h2>digital marketing e web design</h2>
-  </div>
-  <div class='header'>
     <div class="social-icons">
-      <div class='social'><img src='../media/fb.png' /></div>
+      <div class='social'><img src='./media/fb.png' /></div>
 
-      <div class='social'><img src='../media/ig.png' /></div>
+      <div class='social'><img src='./media/ig.png' /></div>
 
-      <div class='social'><img src='../media/pin.png' /></div>
+      <div class='social'><img src='./media/pin.png' /></div>
     </div>
 
-    <div class='CTA typewriter'>
-      <p class="typewriter typewriter-text">Digitalizza la tua impresa e rendi efficace la tua presenza online</p>
+    <div class='CTA typewriter1'>
+      <p id="typewriter1" class="typewriter-text">Digitalizza e rendi efficace</p>
+    </div>  
+      <div id="typewriter-div2" class='CTA'>
+      <p id="typewriter2" class="typewriter-text">la tua presenza online</p>
     </div>
     <!-- <div class='logo'><img src='../media/logo.svg' class="logo"></div> -->
   </div>
 
 </header>
 
-<article class="section progetti">
+<article id="progetti" class="row justify-content-center section">
+  <h1> Progetti</h1>
+  <div class="col-3 mb-3 rounded mx-3 p-4 border"> a </div>
+  <div class="col-3 mb-3 rounded mx-3 p-4 border"> b</div>
+  <div class="col-3 mb-3 rounded mx-3 p-4 border"> c</div>
+  <div class="col-3 mb-3 rounded mx-3 p-4 border"> c</div>
+  <div class="col-3 mb-3 rounded mx-3 p-4 border"> c</div>
+</article>
 
+<article id="chisono" class="section chisono">
+  <h1> Su di me</h1>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+           Una bio rapida e indolore
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Curriculum e skills
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Passioni e hobby
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
 
 </article>
 
-<article class="section chisono">
-
-</article>
-
-<footer>
-   <menu class="menufooter"> 
-
-   </menu> 
+<footer class="footer">
+   <menu class="menu-footer">
+   </menu>
+   <div class="legal-footer"></div>
+   <div class="text-footer"></div> 
 </footer>
 
 
 
 
+
+</div>
+
+
+<script>
+  const myTimeout = setTimeout(showDelayed, 4000);
+  
+  function showDelayed() {
+    document.getElementById("typewriter-div2").style.display="block";  
+  }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
