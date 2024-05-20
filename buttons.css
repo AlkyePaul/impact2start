@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+  border-color: #E0E0E0;
+}
+.btn:hover {
+  transform: scale(0.97);
+  border-color: orange;
+}
+.btn-primary {
+  background-color: green;
+}
+.btn-primary:hover {
+  background-color: rgb(32, 35, 31);
+}
+.btn-secondary {
+  background-color: orange;
+}
+.btn-secondary:hover {
+  background-color: rgb(32, 35, 31);
+}

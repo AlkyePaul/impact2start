@@ -1,4 +1,5 @@
 @import "config";
+@import "buttons";
 
 *{
     margin:0;
@@ -13,14 +14,15 @@ a{
 }
 
 .page-content{
-    margin:0% 1%;
+    margin:0% auto;
+  
 }
 
 
 .menu-container{
     display: block;
     position: fixed;
-    background-color: $back-color;
+    background-color: $back-color-2;
     top:0px;
     height: 75px;
     width: 100%;
@@ -29,10 +31,11 @@ a{
 
 .menu-desktop{
             display:flex;
-            justify-content:space-around;
+            justify-content:right;
+            padding-right: 10%;
             a{
                 text-decoration: none;
-                color: $dark-text
+                color: $light-text
             }
                      
             li{
@@ -54,7 +57,7 @@ a{
             right: 80px;
             z-index: 1000;
             font-size: 15px; /* Dimensione dell'icona */
-            color:$dark-text;
+            color:$light-text;
             text-align: center;
           
            
@@ -65,6 +68,7 @@ a{
           
           .dropdown-menu{
             display:none;
+            border:1px solid $border-color;
           }
           
           .hamburger:hover .dropdown-menu{
@@ -72,13 +76,12 @@ a{
             cursor: pointer;
             position: fixed;
             right:30px;
-            background-color:$primary-color;
+            background-color:$back-color-2;
            
             z-index: 1000;
                         .dropdown-item-mobile{
                             list-style: none;
-                            margin-right: 0px auto;
-                            border-bottom: 1px white solid;
+                          margin-right: 0px auto;
                             font-size: 1rem;
                             text-indent: 1px;
                             letter-spacing: 1px;    
@@ -90,24 +93,39 @@ a{
                         }}
   }
 }
-
+.logo{
+  background-color: $back-color-2;
+  position: fixed;
+  top: 10px;
+  left: 120px;
+}
 .hero-banner {
-    height: fit-content;
-    padding-bottom:50px;
-    margin-top: 75px;
+    min-height: fit-content;
+    height: 600PX;
+    margin-top: 100px;
     color:$dark-text;
 
     video{position:absolute;
         min-width: 100%;
         height: 400px;
     z-index: -1;}
+
+    .ritratto{
+      z-index: -1;
+      border-radius: 500px;
+      border: 2px solid $secondary-color;
+    }
     .hero-content {
+
+      h1{ font-size: 65px;
+      }
         padding: 50px 20px;
 
         h1,h2, .social-icons{
             margin-bottom: 20px;
         }
-        .social{margin-right: 20px;}
+        .social{margin-right: 20px;
+        padding: 20px 0px;}
         
     
 
@@ -122,7 +140,7 @@ a{
     width: fit-content;
     height:auto;
     padding: 5px;
-    margin:auto 0;
+    margin:auto 20px;
     text-align: center;
     font-weight: bold;
     background-color: #19192390;
@@ -134,7 +152,7 @@ a{
     font-size: 14px;
     text-align: left;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid $secondary-color; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
@@ -148,13 +166,9 @@ a{
     display: none;
 }
   #typewriter2{
-    animation:typing 4s steps(50, end),blink-caret .75s step-end 4.5s;}
+    animation:typing 4s steps(50, end),blink-caret .75s step-end infinite;}
     animation-delay: 4s;
 
-@keyframes  hideit {
-        0% { opacity: 0; }
-        100% { opacity: 0; }  
-}
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
@@ -170,9 +184,23 @@ a{
     
 }
 
-article h1 {
+article  {
+  h2{
     text-align: center;
     margin: 25px auto;
+  font-size: 90px;}
+
+  .progetti-item{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.card-body-text{
+  min-height: 160px;
+}
 }
 
 footer{
@@ -180,11 +208,53 @@ footer{
 }
 
 /* responsive design*/
-
+@media only screen and (min-width:1060px) {
+  .page-content{
+    width: 80%;
+  .hero-banner{
+    .ritratto{
+        position: absolute;
+        right: 25%;
+        top: 150px;      
+      }
+    }
+  }
 .mobile-only {display: none;}
+  }
+  @media only screen and (min-width:960px) and (max-width:1060px){
+
+  .page-content {
+    width: 80%;
+  }
+.mobile-only {display: none;}
+}
+.ritratto{
+  position: absolute;
+  right: 15%;
+  top: 150px; 
+}
 
 @media only screen and (max-width: 960px) {
-    .no-mobile{display:none !important;}
+    .no-mobile{display:none!important;}
+
+    .page-content{
+      width: 95%;
+    }
   
     .mobile-only {display:block;}
+    .ritratto{
+     display: none;
+    }
+}
+
+@media only screen and (max-width: 760px){
+article { 
+  h2{
+    font-size: 70px;
+  }
+}
+.mobile-only {display:block;}
+.ritratto{
+ display: none;
+}
 }
