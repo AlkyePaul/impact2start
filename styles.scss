@@ -10,12 +10,11 @@ a{
     cursor:pointer;
   }
 
-  h1,h2,h3,li { font-family: $font-titles;}
+  h1,h2,h3 { font-family: $font-titles;}
 }
-
 .page-content{
-    margin:0% auto;
-  
+    margin:0px auto; 
+
 }
 
 
@@ -32,19 +31,24 @@ a{
 .menu-desktop{
             display:flex;
             justify-content:right;
-            padding-right: 10%;
+            padding-right: 1%;
             a{
                 text-decoration: none;
-                color: $light-text
+                color: $light-text;
+                text-transform: uppercase;
             }
                      
             li{
                 padding: 25px 50px;
                 list-style: none;
 
-                li:hover{
-                    padding: 25px 50px;
-                    border-bottom: 3px solid $primary-color;
+                a:hover{
+                  padding:10px 0px;
+                  color: $secondary-color;
+                    border-bottom: 3px solid $secondary-color;
+            }
+            a:active{
+              color:$secondary-color;
             }
         }
     }
@@ -90,50 +94,41 @@ a{
                                 color: $light-text;
                                 text-decoration: none;
                              }
+                             a:hover{
+                              padding:10px 0px;
+                              color: $secondary-color;
+                                border-bottom: 3px solid $secondary-color;
+                        }
+                        a:active{
+                          color:$secondary-color;
+                        }
                         }}
   }
 }
 .logo{
   background-color: $back-color-2;
   position: fixed;
-  top: 10px;
-  left: 120px;
+  top: 30px;
+  left: 20px;
+  color: $light-text;
+  font-weight: bold;
 }
 .hero-banner {
     min-height: fit-content;
     height: 600PX;
     margin-top: 100px;
+    
     color:$dark-text;
-
-    video{position:absolute;
-        min-width: 100%;
-        height: 400px;
-    z-index: -1;}
-
-    .ritratto{
-      z-index: -1;
-      border-radius: 500px;
-      border: 2px solid $secondary-color;
-    }
     .hero-content {
-
+      padding: 50px 20px;
+      
       h1{ font-size: 65px;
-      }
-        padding: 50px 20px;
+      }  
 
         h1,h2, .social-icons{
             margin-bottom: 20px;
-        }
-        .social{margin-right: 20px;
-        padding: 20px 0px;}
-        
+        }}} 
     
-
-    .social-icons {
-        display: flex;
-        justify-content: left;
-    } }
-
     /*testo della typewriter*/
 .CTA {
     font-family: 'Courier New', Courier, monospace;
@@ -149,7 +144,7 @@ a{
   
   .typewriter-text{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid $secondary-color; /* The typwriter cursor */
@@ -167,7 +162,7 @@ a{
 }
   #typewriter2{
     animation:typing 4s steps(50, end),blink-caret .75s step-end infinite;}
-    animation-delay: 4s;
+  
 
   /* The typing effect */
   @keyframes typing {
@@ -181,14 +176,10 @@ a{
     50% { border-color: orange; }
   }
   
-    
-}
-
 article  {
   h2{
-    text-align: center;
-    margin: 25px auto;
-  font-size: 90px;}
+    margin: 50px 0px 25px 0px;
+  font-size: 80px;}
 
   .progetti-item{
     width: 200px;
@@ -201,60 +192,84 @@ article  {
 .card-body-text{
   min-height: 160px;
 }
+.accordion-button{
+  border: 1px solid $primary-color;
+  border-radius: 4px !important;
 }
-
+  .accordion-button:not(.collapsed){
+  background-color:lighten($secondary-color, 45%) !important;
+  color: darken($secondary-color, 2%) !important;
+  font-size:20px;
+  background-image: none}
+.accordion-button:focus{
+  border-color:$primary-color !important;
+  box-shadow: 0 0 0 0;}
+ 
+}
 footer{
     display: inline-flex;
+    height: 400px;
+    background-color: $border-color;
+    width: 100%;
+    margin-top: 100px;
 }
+
+.sidebar{
+  position:absolute;
+  right: 30px;
+  top:100px;
+  border-left: 1px solid $border-color;
+  width: 300px;
+  height: 2500px;
+.ritratto {
+  margin: 20px 0px 20px 20px;
+  width: 270px;
+  height: 320px;
+}
+.spotify{
+  margin: 50px 0px 20px 20px;
+}}
 
 /* responsive design*/
 @media only screen and (min-width:1060px) {
   .page-content{
-    width: 80%;
-  .hero-banner{
-    .ritratto{
-        position: absolute;
-        right: 25%;
-        top: 150px;      
-      }
-    }
+    width: 60%;
+    margin-right: 500px;
+    margin-left: 100px;
+
+  }
+  .typewriter-text{
+    font-size: 22px;
   }
 .mobile-only {display: none;}
   }
   @media only screen and (min-width:960px) and (max-width:1060px){
 
   .page-content {
-    width: 80%;
+    width: 60%;
+    margin-right: 500px;
+    margin-left: 90px;
+  }
+  .typewriter-text{
+    font-size: 22px;
   }
 .mobile-only {display: none;}
-}
-.ritratto{
-  position: absolute;
-  right: 15%;
-  top: 150px; 
-}
-
+  }
 @media only screen and (max-width: 960px) {
     .no-mobile{display:none!important;}
 
     .page-content{
-      width: 95%;
+      width: 90%;
     }
-  
     .mobile-only {display:block;}
-    .ritratto{
-     display: none;
-    }
 }
 
 @media only screen and (max-width: 760px){
-article { 
+  article {
+  width: 90%; 
   h2{
     font-size: 70px;
   }
 }
 .mobile-only {display:block;}
-.ritratto{
- display: none;
-}
 }

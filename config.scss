@@ -1,3 +1,6 @@
+
+@import "../node_modules/bootstrap/scss/variables";
+
 $font-body:Verdana, Geneva, Tahoma, sans-serif; 
 $font-titles:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -9,3 +12,8 @@ $dark-text:rgb(32, 33, 36);;
 $light-text:white;
 $border-color:#E0E0E0;
 $btn-hover-color: rgb(32, 35, 31);
+
+.divisore{
+    height: 20px;
+}
+$accordion-icon-active-color:$secondary-color;

@@ -1,3 +1,11 @@
+.divisore {
+  height: 20px;
+}
+
+.divisore {
+  height: 20px;
+}
+
 .btn {
   display: inline-block;
   border-radius: 5px;
@@ -30,12 +38,12 @@
 * a {
   cursor: pointer;
 }
-* h1, * h2, * h3, * li {
+* h1, * h2, * h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .page-content {
-  margin: 0% auto;
+  margin: 0px auto;
 }
 
 .menu-container {
@@ -51,19 +59,24 @@
 .menu-container .menu-desktop {
   display: flex;
   justify-content: right;
-  padding-right: 10%;
+  padding-right: 1%;
 }
 .menu-container .menu-desktop a {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
 }
 .menu-container .menu-desktop li {
   padding: 25px 50px;
   list-style: none;
 }
-.menu-container .menu-desktop li li:hover {
-  padding: 25px 50px;
-  border-bottom: 3px solid #0E173B;
+.menu-container .menu-desktop li a:hover {
+  padding: 10px 0px;
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+.menu-container .menu-desktop li a:active {
+  color: orange;
 }
 .menu-container .menu-mobile .hamburger {
   display: block;
@@ -103,12 +116,22 @@
   color: white;
   text-decoration: none;
 }
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a:hover {
+  padding: 10px 0px;
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a:active {
+  color: orange;
+}
 
 .logo {
   background-color: #0E173B;
   position: fixed;
-  top: 10px;
-  left: 120px;
+  top: 30px;
+  left: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 .hero-banner {
@@ -116,21 +139,6 @@
   height: 600PX;
   margin-top: 100px;
   color: rgb(32, 33, 36);
-  /*testo della typewriter*/
-  animation-delay: 4s;
-  /* The typing effect */
-  /* The typewriter cursor effect */
-}
-.hero-banner video {
-  position: absolute;
-  min-width: 100%;
-  height: 400px;
-  z-index: -1;
-}
-.hero-banner .ritratto {
-  z-index: -1;
-  border-radius: 500px;
-  border: 2px solid orange;
 }
 .hero-banner .hero-content {
   padding: 50px 20px;
@@ -141,15 +149,9 @@
 .hero-banner .hero-content h1, .hero-banner .hero-content h2, .hero-banner .hero-content .social-icons {
   margin-bottom: 20px;
 }
-.hero-banner .hero-content .social {
-  margin-right: 20px;
-  padding: 20px 0px;
-}
-.hero-banner .hero-content .social-icons {
-  display: flex;
-  justify-content: left;
-}
-.hero-banner .CTA {
+
+/*testo della typewriter*/
+.CTA {
   font-family: "Courier New", Courier, monospace;
   width: fit-content;
   height: auto;
@@ -160,9 +162,10 @@
   background-color: rgba(25, 25, 35, 0.5647058824);
   color: white;
 }
-.hero-banner .typewriter-text {
+
+.typewriter-text {
   font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
@@ -170,15 +173,20 @@
   margin: 0; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.1em; /* Adjust as needed */
 }
-.hero-banner #typewriter1 {
+
+#typewriter1 {
   animation: typing 4s steps(50, end), blink-caret 0.75s step-end;
 }
-.hero-banner #typewriter-div2 {
+
+#typewriter-div2 {
   display: none;
 }
-.hero-banner #typewriter2 {
+
+#typewriter2 {
   animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
 }
+
+/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
@@ -187,6 +195,7 @@
     width: 100%;
   }
 }
+/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
@@ -195,11 +204,9 @@
     border-color: orange;
   }
 }
-
 article h2 {
-  text-align: center;
-  margin: 25px auto;
-  font-size: 90px;
+  margin: 50px 0px 25px 0px;
+  font-size: 80px;
 }
 article .progetti-item {
   width: 200px;
@@ -212,20 +219,55 @@ article .progetti-item {
 article .card-body-text {
   min-height: 160px;
 }
+article .accordion-button {
+  border: 1px solid #0E173B;
+  border-radius: 4px !important;
+}
+article .accordion-button:not(.collapsed) {
+  background-color: #fff6e6 !important;
+  color: #f59e00 !important;
+  font-size: 20px;
+  background-image: none;
+}
+article .accordion-button:focus {
+  border-color: #0E173B !important;
+  box-shadow: 0 0 0 0;
+}
 
 footer {
   display: inline-flex;
+  height: 400px;
+  background-color: #E0E0E0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.sidebar {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  border-left: 1px solid #E0E0E0;
+  width: 300px;
+  height: 2500px;
+}
+.sidebar .ritratto {
+  margin: 20px 0px 20px 20px;
+  width: 270px;
+  height: 320px;
+}
+.sidebar .spotify {
+  margin: 50px 0px 20px 20px;
 }
 
 /* responsive design*/
 @media only screen and (min-width: 1060px) {
   .page-content {
-    width: 80%;
+    width: 60%;
+    margin-right: 500px;
+    margin-left: 100px;
   }
-  .page-content .hero-banner .ritratto {
-    position: absolute;
-    right: 25%;
-    top: 150px;
+  .typewriter-text {
+    font-size: 22px;
   }
   .mobile-only {
     display: none;
@@ -233,40 +275,36 @@ footer {
 }
 @media only screen and (min-width: 960px) and (max-width: 1060px) {
   .page-content {
-    width: 80%;
+    width: 60%;
+    margin-right: 500px;
+    margin-left: 90px;
+  }
+  .typewriter-text {
+    font-size: 22px;
   }
   .mobile-only {
     display: none;
   }
 }
-.ritratto {
-  position: absolute;
-  right: 15%;
-  top: 150px;
-}
-
 @media only screen and (max-width: 960px) {
   .no-mobile {
     display: none !important;
   }
   .page-content {
-    width: 95%;
+    width: 90%;
   }
   .mobile-only {
     display: block;
   }
-  .ritratto {
-    display: none;
-  }
 }
 @media only screen and (max-width: 760px) {
+  article {
+    width: 90%;
+  }
   article h2 {
     font-size: 70px;
   }
   .mobile-only {
     display: block;
-  }
-  .ritratto {
-    display: none;
   }
 }
