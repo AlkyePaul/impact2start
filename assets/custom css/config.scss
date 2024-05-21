@@ -1,5 +1,9 @@
+@import "../bootstrap/scss/functions.scss";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/accordion.scss";
 
-@import "../node_modules/bootstrap/scss/variables";
+
 
 $font-body:Verdana, Geneva, Tahoma, sans-serif; 
 $font-titles:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -15,5 +19,5 @@ $btn-hover-color: rgb(32, 35, 31);
 
 .divisore{
     height: 20px;
+    width: 100%;
 }
-$accordion-icon-active-color:$secondary-color;

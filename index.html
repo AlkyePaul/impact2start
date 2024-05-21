@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My portfolio</title>
   <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-  <link rel='stylesheet' href='css/bootstrap.min.css' />
-  <link rel='stylesheet' href='styles.css' />
+  <link rel='stylesheet' href='./assets/bootstrap/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='./assets/custom css/styles.css' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+  <script>var $j = jQuery.noConflict();</script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <html>
@@ -42,7 +43,7 @@
     </nav>
   </header>
 
-  <div class="page-content">
+  <div class="page-content primo-div">
     <header class="hero-banner">
       <div class="hero-content">
         <h1 class="header-title">Digital Marketing <br>& Web Design</h1>
@@ -50,7 +51,7 @@
       <div class='CTA typewriter1'>
         <p id="typewriter1" class="typewriter-text">Digitalizza e rendi efficace</p>
       </div>
-      <div id="typewriter-div2" class='CTA'>
+      <div id="typewriter-div-2" class='CTA'>
         <p id="typewriter2" class="typewriter-text">la tua presenza online</p>
       </div>
     </header>
@@ -208,26 +209,23 @@
   </div>
 
 
-  <script>
-
-
+<script>
     const myTimeout = setTimeout(showDelayed, 4000);
 
     function showDelayed() {
-      document.getElementById("typewriter-div2").style.display = "block";
+      document.getElementById("typewriter-div-2").style.display = "block";
     }
 
-    const typewriterOff = setTimeout(typeOff, 4250);
+  const typewriterOff = setTimeout(typeOff, 4250);
 
     function typeOff() {
       document.getElementById("typewriter1").style.border = "none";
     }
 
-   </script>
-
-<script>
-	  jQuery(document).ready(function($) {$(".accordion-button").click(function(){ this.scrollIntoView({behavior: 'smooth', block: 'center' });})});
-
+	  jQuery(document).ready(function($) 
+    {$(".accordion-button").click(function()
+    { this.scrollIntoView({behavior: 'smooth', block: 'center' });})});
+  
   </script>
 
 </body>
