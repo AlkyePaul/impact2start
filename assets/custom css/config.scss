@@ -2,6 +2,7 @@
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 @import "../bootstrap/scss/accordion.scss";
+@import "../bootstrap/scss/carousel";
 
 
 
@@ -11,7 +12,9 @@ $font-titles:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 $back-color: white;
 $back-color-2:#0E173B;
 $primary-color:#0E173B;
-$secondary-color:orange; 
+$secondary-color:#FF4D00;
+$terziary-color:#00ffff;
+$secondary-color-light:orange; 
 $dark-text:rgb(32, 33, 36);;
 $light-text:white;
 $border-color:#E0E0E0;
@@ -21,3 +24,30 @@ $btn-hover-color: rgb(32, 35, 31);
     height: 20px;
     width: 100%;
 }
+
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    width: 5px;
+    background: $secondary-color;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $terziary-color;
+    width: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:$terziary-color;
+  }

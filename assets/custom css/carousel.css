@@ -1,0 +1,19 @@
+.carousel {
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  margin-bottom: 400px;
+}
+.carousel-inner .carousel-item h4, .carousel-inner .carousel-item p {
+  text-align: center;
+}
+.carousel-inner .carousel-item img {
+  height: 100%;
+  width: 100%;
+  margin: auto !important;
+  object-fit: contain;
+  padding: 40px !important;
+}
