@@ -1354,6 +1354,7 @@ article .card-body-text {
 article .accordion .accordion-button {
   border: 1px solid #0E173B;
   border-radius: 4px !important;
+  background-color: white;
 }
 article .accordion .accordion-button:not(.collapsed) {
   background-color: #ffede6 !important;
@@ -1366,14 +1367,43 @@ article .accordion .accordion-button:focus {
 }
 
 footer {
-  display: inline-flex;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
   background-color: #E0E0E0;
   width: 100%;
   margin-top: 200px;
   padding-top: 50px;
   padding-right: 150px;
   padding-left: 100px;
+  justify-content: center;
+  align-items: center !important;
+}
+footer .footer-item-1 {
+  flex: 1;
+  border-bottom: 1px solid #FF4D00;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+footer .footer-item-2 {
+  flex: 2;
+  border-bottom: 1px solid #FF4D00;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+footer .footer-item-2 p {
+  text-align: center;
+}
+footer .footer-item-3 {
+  flex: 1;
+}
+footer .footer-item {
+  height: 300px;
+}
+footer img {
+  height: 300px;
+  width: 300px;
 }
 
 .sidebar {
@@ -1381,19 +1411,27 @@ footer {
   right: 30px;
   top: 100px;
   border-left: 1px solid #E0E0E0;
-  width: 300px;
+  width: 260px;
   height: 2500px;
+  z-index: -2;
 }
 .sidebar .ritratto {
-  margin: 20px 0px 20px 20px;
-  width: 290px;
-  height: 320px;
+  margin: 5px;
+  width: 270px;
+  height: 280px;
 }
 .sidebar .spotify {
   position: fixed;
   z-index: -1;
-  top: 350px;
-  margin: 50px 0px 20px 20px;
+  top: 400px;
+  margin: 50px 12px;
+}
+
+.ritratto-mobile {
+  position: absolute;
+  right: 70px;
+  width: 150px;
+  height: 150px;
 }
 
 .accordion {
@@ -2288,13 +2326,19 @@ form textarea {
   .typewriter-text {
     font-size: 22px;
   }
+  .ritratto-mobile {
+    position: absolute;
+    right: 470px;
+    width: 210px;
+    height: 210px;
+  }
 }
 @media only screen and (min-width: 960px) and (max-width: 1060px) {
   .page-content {
-    width: 60%;
+    width: 80%;
   }
   .page-content .homepage {
-    margin-right: 150px;
+    margin-right: 250px;
   }
   .page-content .typewriter-text {
     font-size: 22px;
