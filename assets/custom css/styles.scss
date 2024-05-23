@@ -2,12 +2,14 @@
 @import "header";
 @import "buttons";
 
-.primo-div{
-  margin-top: 100px;
+.spacing-div{
+height: 100px;
+width: 100%;
   }
 
+
 .page-content{
-    margin:0px auto;
+    margin:0 auto;
     h1{
       font-size: 65px;
     }
@@ -148,7 +150,9 @@ footer{
 
 
 /* responsive design*/
-@media only screen and (min-width:1060px) {
+@media only screen and (min-width:1060px){
+.mobile-only {display: none !important;}
+ 
   .page-content{
     width: 80%;   
 .homepage{
@@ -163,9 +167,8 @@ footer{
   .typewriter-text{
     font-size: 22px;
   }
-.mobile-only {display: none;}
-  }
 
+  }
 
 
   @media only screen and (min-width:960px) and (max-width:1060px){
