@@ -1,13 +1,12 @@
 
-
 console.log('I just ran');
 
 (function() {
   // https://dashboard.emailjs.com/admin/account
   emailjs.init({
-    publicKey: "YOUR_PUBLIC_KEY",
+    publicKey: "NoE6Up0hSUYQnokoz",
   });
-})();
+});
 
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -30,7 +29,7 @@ window.onload = function() {
   const typewriterOff = setTimeout(typeOff, 4250);
 
     function typeOff() {
-      document.getElementById("typewriter1").style.border = "none"}
+      document.getElementById("typewriter1").style.border = "none"};
 
 
 	  jQuery(document).ready(function($) 

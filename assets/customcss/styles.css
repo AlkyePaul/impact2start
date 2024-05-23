@@ -1386,10 +1386,13 @@ footer {
 }
 .sidebar .ritratto {
   margin: 20px 0px 20px 20px;
-  width: 270px;
+  width: 290px;
   height: 320px;
 }
 .sidebar .spotify {
+  position: fixed;
+  z-index: -1;
+  top: 350px;
   margin: 50px 0px 20px 20px;
 }
 
@@ -2340,4 +2343,15 @@ form textarea {
   .mobile-only {
     display: block;
   }
+}
+/* responsive solo form */
+input[type=text],
+input[type=email],
+select {
+  width: 250px;
+  height: initial;
+}
+
+textarea {
+  height: 200px;
 }
