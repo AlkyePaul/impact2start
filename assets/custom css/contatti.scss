@@ -1,0 +1,60 @@
+@import "config";
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: $border-color;
+    margin-top: 50px;
+padding: 0px 30px 30px 30px;
+
+    label{
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-family: $font-body;  
+    }
+
+    input{
+        border-color: $secondary-color;
+        border-radius: 4px;
+    }
+
+    textarea{
+        height: 150px;
+        border-color: $secondary-color;
+        border-radius: 4px;
+    }
+}
+
+#contact-form-submit{
+    margin-top: 50px;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: $secondary-color;
+
+    &:hover{
+        color:$dark-text;
+        background-color: $secondary-color-light;
+        outline: none;
+        box-shadow: none;
+
+    } 
+    &:active, &:focus &:checked{
+       color:$dark-text;
+        background-color: $secondary-color;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* responsive solo form */
+     input[type='text'],
+     input[type='email'],
+     select{ width: 250px;
+      height: initial;
+    }
+
+    textarea{
+        height: 200px;
+    } }

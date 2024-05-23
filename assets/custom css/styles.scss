@@ -9,7 +9,7 @@ width: 100%;
 
 
 .page-content{
-    margin:0 auto;
+    margin:50px auto;
     h1{
       font-size: 65px;
     }
@@ -147,6 +147,7 @@ footer{
 
 
 @import "bonus";
+@import "contatti";
 
 
 /* responsive design*/
@@ -192,7 +193,6 @@ footer{
 
     .page-content{
       width: 90%;
-      margin: 100px auto;
     }
     .mobile-only {display:block;}
 
