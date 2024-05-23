@@ -1,24 +1,63 @@
+@import "config";
+
+.secondary-page-article{
+  width: 100% !important;
+}
+
 .carousel{
-    width: 50%;
-    height: 300px;
-    margin: 100px auto;
+  display: block;
+  width: 50%;
+  margin: auto;
 }
 .carousel-inner{
 
-    margin-bottom: 100px;
-
-    .carousel-item {
-        h4,p{
-            text-align: center;
-        }
-        img{
-        height:100%; width:100%;
-        margin:auto !important;
-        object-fit: contain;
-        padding: 40px !important;
-        
-    }}
-   
-    
+  .carousel-item {
+      h4,p{
+          text-align: center;
+      }
+      img{
+      height:100%; width:100%;
+      margin:auto !important;
+      object-fit: contain;
+      padding: 40px !important;
+      
+  }}
+ 
+  
 }
 
+.color-palette{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ .color-palette-item{
+  height: 100px;
+  min-width: 10px;
+  margin-right: 10px;
+  
+ }
+
+#color-1{
+  flex:4;
+  .color-palette-item{
+  background-color: $primary-color;  
+}}
+
+#color-2{
+  flex: 3;
+  .color-palette-item{
+  background-color: $secondary-color;
+}}
+
+#color-3{
+  flex: 2;
+  .color-palette-item{
+  background-color: $terziary-color;
+}}
+#color-4{
+  flex: 1;
+  .color-palette-item{
+  background-color: $secondary-color-light;
+}}
+
+}

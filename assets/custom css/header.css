@@ -380,3 +380,90 @@ a {
 h1, h2, h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.menu-container {
+  display: block;
+  position: fixed;
+  background-color: #0E173B;
+  top: 0px;
+  height: 75px;
+  width: 100%;
+  border-bottom: solid 1px #E0E0E0;
+  z-index: 999;
+}
+.menu-container .menu-desktop {
+  display: flex;
+  justify-content: right;
+  padding-right: 1%;
+}
+.menu-container .menu-desktop a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.menu-container .menu-desktop li {
+  padding: 25px 50px;
+  list-style: none;
+}
+.menu-container .menu-desktop li a:hover {
+  padding: 10px 0px;
+  color: #FF4D00;
+  border-bottom: 3px solid #FF4D00;
+}
+.menu-container .menu-desktop li a:active {
+  color: #FF4D00;
+}
+.menu-container .menu-mobile .hamburger {
+  display: block;
+  position: fixed;
+  top: 15px;
+  right: 80px;
+  z-index: 1000;
+  font-size: 15px; /* Dimensione dell'icona */
+  color: white;
+  text-align: center;
+}
+.menu-container .menu-mobile .hamburger span {
+  text-align: center;
+  font-size: 30px;
+}
+.menu-container .menu-mobile .dropdown-menu {
+  display: none;
+  border: 1px solid #E0E0E0;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu {
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  background-color: #0E173B;
+  z-index: 1000;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile {
+  list-style: none;
+  margin-right: 0px auto;
+  font-size: 1rem;
+  text-indent: 1px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a {
+  color: white;
+  text-decoration: none;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a:hover {
+  padding: 10px 0px;
+  color: #FF4D00;
+  border-bottom: 3px solid #FF4D00;
+}
+.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a:active {
+  color: #FF4D00;
+}
+.menu-container .logo {
+  background-color: #0E173B;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  color: white;
+  font-weight: bold;
+}
