@@ -769,11 +769,11 @@
 .carousel {
   width: 50%;
   height: 300px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .carousel-inner {
-  margin-bottom: 400px;
+  margin-bottom: 100px;
 }
 .carousel-inner .carousel-item h4, .carousel-inner .carousel-item p {
   text-align: center;
@@ -1021,6 +1021,60 @@ footer {
   margin: 50px 0px 20px 20px;
 }
 
+.color-palette-article {
+  margin-top: 150px !important;
+}
+.color-palette-article .color-palette {
+  display: flex;
+  justify-content: space-between;
+}
+.color-palette-article .color-palette .color-palette-item {
+  height: 100px;
+  min-width: 80px;
+  margin-right: 10px;
+}
+.color-palette-article .color-palette #color-1 {
+  flex: 3;
+}
+.color-palette-article .color-palette #color-1 .color-palette-item {
+  background-color: #0E173B;
+}
+.color-palette-article .color-palette #color-2 {
+  flex: 2;
+}
+.color-palette-article .color-palette #color-2 .color-palette-item {
+  background-color: #FF4D00;
+}
+.color-palette-article .color-palette #color-3 {
+  flex: 1;
+}
+.color-palette-article .color-palette #color-3 .color-palette-item {
+  background-color: #00ffff;
+}
+.color-palette-article .color-palette #color-4 {
+  flex: 1;
+}
+.color-palette-article .color-palette #color-4 .color-palette-item {
+  background-color: orange;
+}
+
+/*
+.color-palette-item{
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+
+  #color-1{background-color:$primary-color ;
+  flex-grow: 2;}
+  #color2{background-color:$secondary-color ;}
+  #color3{background-color: $secondary-color-light ;
+  flex-shrink: 2;}
+  #color4{background-color:$terziary-color ;
+    flex-shrink: 2;}
+
+}
+}
+*/
 /* responsive design*/
 @media only screen and (min-width: 1060px) {
   .page-content {
