@@ -2,6 +2,46 @@
 @import "header";
 @import "buttons";
 
+
+
+*{
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: $secondary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $terziary-color;
+  width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:$terziary-color;
+}
+
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior:auto;
+scroll-padding:10rem; 
+      a{
+        cursor:pointer;
+      }
+    
+      
+    h1,h2,h3 { font-family: $font-titles;}
+    
+}
+
 .spacing-div{
 height: 100px;
 width: 100%;

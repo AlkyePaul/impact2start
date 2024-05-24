@@ -20,40 +20,7 @@ $light-text:white;
 $border-color:#E0E0E0;
 $btn-hover-color:$terziary-color;
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    width: 5px;
-    background: $secondary-color;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $terziary-color;
-    width: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background:$terziary-color;
-  }
 
 
-  *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding: 5rem;
-  }
 
-a{
-    cursor:pointer;
-  }
 
-  
-h1,h2,h3 { font-family: $font-titles;}
