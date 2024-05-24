@@ -24,7 +24,7 @@ width: 100%;
     
     color:$dark-text;
     .hero-content {
-      padding: 45px 20px;
+      padding: 50px 20px;
       
       h1{ font-size: 65px;
       }  
@@ -32,14 +32,15 @@ width: 100%;
         h1,h2, .social-icons{
             margin-bottom: 20px;
         }}} 
-    
+
+        
     /*testo della typewriter*/
 .CTA {
 
     width: fit-content;
     height:auto;
     padding: 5px;
-    margin:auto 20px;
+    margin:0px 20px;
     text-align: center;
     font-weight: bold;
     background-color: #19192390;
@@ -63,7 +64,6 @@ width: 100%;
       #typewriter2{
         animation:typing 4s steps(50, end),blink-caret .75s step-end infinite;}
       
-
     
       /* The typing effect */
       @keyframes typing {
@@ -79,11 +79,17 @@ width: 100%;
     
   }
 
+  .typewriter-div-2-spacing {
+    height: 35px;
+    width: 100%;
+  }
+  
   #typewriter-div-2{
-    display: none;
+  display:none;
 }
 
 .CTA-btn {
+  position: relative;
   margin-top: 50px;
 margin-left: 20px;
 }

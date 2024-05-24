@@ -1243,7 +1243,7 @@ h1, h2, h3 {
 }
 .btn:hover {
   transform: scale(0.97);
-  border-color: #FF4D00;
+  border-color: black;
 }
 .btn-primary {
   background-color: #0E173B;
@@ -1278,7 +1278,7 @@ h1, h2, h3 {
   color: rgb(32, 33, 36);
 }
 .hero-banner .hero-content {
-  padding: 45px 20px;
+  padding: 50px 20px;
 }
 .hero-banner .hero-content h1 {
   font-size: 65px;
@@ -1292,7 +1292,7 @@ h1, h2, h3 {
   width: fit-content;
   height: auto;
   padding: 5px;
-  margin: auto 20px;
+  margin: 0px 20px;
   text-align: center;
   font-weight: bold;
   background-color: rgba(25, 25, 35, 0.5647058824);
@@ -1333,11 +1333,17 @@ h1, h2, h3 {
   }
 }
 
+.typewriter-div-2-spacing {
+  height: 35px;
+  width: 100%;
+}
+
 #typewriter-div-2 {
   display: none;
 }
 
 .CTA-btn {
+  position: relative;
   margin-top: 50px;
   margin-left: 20px;
 }
