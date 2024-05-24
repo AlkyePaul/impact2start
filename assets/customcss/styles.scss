@@ -9,7 +9,7 @@ width: 100%;
 
 
 .page-content{
-    margin:50px auto;
+    margin:20px auto;
     h1{
       font-size: 65px;
     }
@@ -24,7 +24,7 @@ width: 100%;
     
     color:$dark-text;
     .hero-content {
-      padding: 50px 20px;
+      padding: 40px 20px;
       
       h1{ font-size: 65px;
       }  
@@ -84,7 +84,7 @@ width: 100%;
 }
 
 .CTA-btn {
-  margin-top: 50px;
+  margin-top: 40px;
 margin-left: 20px;
 }
 
@@ -261,6 +261,10 @@ height: 300px;
 
 
 @media only screen and (max-width: 760px){
+  .page-content{
+    margin-top: 0px;
+
+  }
   article {
   width: 90%; 
   h2{

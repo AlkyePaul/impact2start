@@ -1264,7 +1264,7 @@ h1, h2, h3 {
 }
 
 .page-content {
-  margin: 50px auto;
+  margin: 20px auto;
 }
 .page-content h1 {
   font-size: 65px;
@@ -1276,7 +1276,7 @@ h1, h2, h3 {
   color: rgb(32, 33, 36);
 }
 .hero-banner .hero-content {
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
 .hero-banner .hero-content h1 {
   font-size: 65px;
@@ -1336,7 +1336,7 @@ h1, h2, h3 {
 }
 
 .CTA-btn {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 20px;
 }
 
@@ -2355,6 +2355,9 @@ form textarea {
   }
 }
 @media only screen and (max-width: 760px) {
+  .page-content {
+    margin-top: 0px;
+  }
   article {
     width: 90%;
   }
