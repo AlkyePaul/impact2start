@@ -1250,13 +1250,13 @@ h1, h2, h3 {
 }
 .btn-primary:hover {
   background-color: #00ffff;
-  color: #FF4D00;
+  color: rgb(32, 33, 36);
 }
 .btn-secondary {
   background-color: #FF4D00;
 }
 .btn-secondary:hover {
-  color: #FF4D00;
+  color: rgb(32, 33, 36);
   background-color: #00ffff;
 }
 
@@ -1348,6 +1348,10 @@ article h2 {
 }
 article p {
   margin-bottom: 25px;
+}
+article label {
+  font-size: 20px;
+  font-weight: bold;
 }
 article .progetti-item {
   width: 200px;

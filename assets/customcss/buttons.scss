@@ -20,7 +20,7 @@ background-color: $primary-color;
 &-primary:hover {
 
 background-color:$btn-hover-color;
-color: $secondary-color;}
+color: $dark-text;}
 
 
 &-secondary {
@@ -28,6 +28,6 @@ color: $secondary-color;}
 }
 &-secondary:hover {
     
-color: $secondary-color;
+color: $dark-text;
 background-color:$btn-hover-color;}
 }
