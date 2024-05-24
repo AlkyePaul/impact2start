@@ -2158,6 +2158,20 @@ form textarea {
   background-color: #FF4D00;
 }
 
+#successMessage {
+  display: none;
+  margin-top: 50px;
+}
+
+.success-message {
+  width: 90%;
+  margin: 0px auto;
+  font-weight: bold;
+}
+.success-message p {
+  margin: 50px auto;
+}
+
 /* responsive design*/
 @media only screen and (min-width: 1060px) {
   .mobile-only {

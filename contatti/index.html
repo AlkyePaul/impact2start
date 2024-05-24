@@ -28,7 +28,7 @@
           document.getElementById('contact-form').addEventListener('submit', function(event) {
               event.preventDefault();
               // these IDs from the previous steps
-              emailjs.sendForm('contact_service', 'contact_form', this)
+              emailjs.sendForm('service_g8xou6b', 'template_jloppxi', this)
                   .then(() => {
                       console.log('SUCCESS!');
                   }, (error) => {
@@ -74,7 +74,7 @@
 
     <p> Scrivimi se vuoi rendere più <em>smart</em> il tuo business e sei interessato ai servizi che posso offrire a te o alla tua impresa.</p>
 
-    <div class="contact">
+    <div id="contact-div">
 
       <form id="contact-form" class="form-email">
         
@@ -95,6 +95,14 @@
       </form>
 
 
+    </div>
+
+    <div id="successMessage" class="success-message">
+    
+      <p> Il tuo messaggio è partito ti risponderò presto!</p>
+
+      <img src="../assets/img/Studio-logo11.png" alt="logo meme" width="300" height="300">
+    
     </div>
   </div>
   </div>

@@ -12,8 +12,17 @@ console.log('I just ran');
       document.getElementById("typewriter1").style.border = "none"};
 
 
-	  jQuery(document).ready(function($) 
-    {$(".accordion-button").click(function()
-    { this.scrollIntoView({behavior: 'smooth', block: 'center' });})});
-  
+	  jQuery(document).ready(function($) {
+      
+      $(".accordion-button").click(function()
+    { this.scrollIntoView({behavior: 'smooth', block: 'center' })})
+   
+    //hide contact form show success message
 
+$('#contact-form-submit').click(function(){
+$("#contact-div").hide();
+$("#successMessage").show();
+});     
+
+//chiude jquery
+});

@@ -46,3 +46,18 @@ padding: 0px 30px 30px 30px;
     }
 
 }
+
+#successMessage{
+    display: none;
+    margin-top: 50px;
+}
+
+.success-message{
+    width: 90%;
+    margin: 0px auto;
+    font-weight: bold;
+
+    p {
+        margin: 50px auto;
+    }
+}
