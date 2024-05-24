@@ -396,11 +396,13 @@ h1, h2, h3 {
   background-color: #0E173B;
 }
 .btn-primary:hover {
-  background-color: rgb(32, 35, 31);
+  background-color: #00ffff;
+  color: #FF4D00;
 }
 .btn-secondary {
   background-color: #FF4D00;
 }
 .btn-secondary:hover {
-  background-color: rgb(32, 35, 31);
+  color: #FF4D00;
+  background-color: #00ffff;
 }

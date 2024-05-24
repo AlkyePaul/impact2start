@@ -17,11 +17,17 @@ background-color: $primary-color;
 }
 
 
-&-primary:hover {background-color:$btn-hover-color;}
+&-primary:hover {
+
+background-color:$btn-hover-color;
+color: $secondary-color;}
 
 
 &-secondary {
     background-color: $secondary-color;
 }
-&-secondary:hover {background-color:$btn-hover-color;}
+&-secondary:hover {
+    
+color: $secondary-color;
+background-color:$btn-hover-color;}
 }

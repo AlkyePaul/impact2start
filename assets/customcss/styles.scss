@@ -24,7 +24,7 @@ width: 100%;
     
     color:$dark-text;
     .hero-content {
-      padding: 40px 20px;
+      padding: 45px 20px;
       
       h1{ font-size: 65px;
       }  
@@ -84,7 +84,7 @@ width: 100%;
 }
 
 .CTA-btn {
-  margin-top: 40px;
+  margin-top: 50px;
 margin-left: 20px;
 }
 
@@ -94,6 +94,10 @@ article {
   h2{
     margin: 50px 0px 25px 0px;
   font-size: 50px;}
+
+  p{
+    margin-bottom: 25px;
+  }
 
   .progetti-item{
     width: 200px;

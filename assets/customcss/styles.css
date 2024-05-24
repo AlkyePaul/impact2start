@@ -1249,13 +1249,15 @@ h1, h2, h3 {
   background-color: #0E173B;
 }
 .btn-primary:hover {
-  background-color: rgb(32, 35, 31);
+  background-color: #00ffff;
+  color: #FF4D00;
 }
 .btn-secondary {
   background-color: #FF4D00;
 }
 .btn-secondary:hover {
-  background-color: rgb(32, 35, 31);
+  color: #FF4D00;
+  background-color: #00ffff;
 }
 
 .spacing-div {
@@ -1276,7 +1278,7 @@ h1, h2, h3 {
   color: rgb(32, 33, 36);
 }
 .hero-banner .hero-content {
-  padding: 40px 20px;
+  padding: 45px 20px;
 }
 .hero-banner .hero-content h1 {
   font-size: 65px;
@@ -1336,13 +1338,16 @@ h1, h2, h3 {
 }
 
 .CTA-btn {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-left: 20px;
 }
 
 article h2 {
   margin: 50px 0px 25px 0px;
   font-size: 50px;
+}
+article p {
+  margin-bottom: 25px;
 }
 article .progetti-item {
   width: 200px;
