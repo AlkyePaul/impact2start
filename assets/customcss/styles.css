@@ -1287,7 +1287,6 @@ h1, h2, h3 {
 
 /*testo della typewriter*/
 .CTA {
-  font-family: "Courier New", Courier, monospace;
   width: fit-content;
   height: auto;
   padding: 5px;
@@ -1334,6 +1333,11 @@ h1, h2, h3 {
 
 #typewriter-div-2 {
   display: none;
+}
+
+.CTA-btn {
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 article h2 {
@@ -2296,18 +2300,6 @@ form textarea {
   background-color: #FF4D00;
 }
 
-@media only screen and (min-width: 600px) {
-  /* responsive solo form */
-  input[type=text],
-  input[type=email],
-  select {
-    width: 250px;
-    height: initial;
-  }
-  textarea {
-    height: 200px;
-  }
-}
 /* responsive design*/
 @media only screen and (min-width: 1060px) {
   .mobile-only {

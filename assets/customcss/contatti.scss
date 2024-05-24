@@ -46,15 +46,3 @@ padding: 0px 30px 30px 30px;
     }
 
 }
-
-@media only screen and (min-width: 600px) {
-    /* responsive solo form */
-     input[type='text'],
-     input[type='email'],
-     select{ width: 250px;
-      height: initial;
-    }
-
-    textarea{
-        height: 200px;
-    } }

@@ -420,16 +420,3 @@ form textarea {
   color: rgb(32, 33, 36);
   background-color: #FF4D00;
 }
-
-@media only screen and (min-width: 600px) {
-  /* responsive solo form */
-  input[type=text],
-  input[type=email],
-  select {
-    width: 250px;
-    height: initial;
-  }
-  textarea {
-    height: 200px;
-  }
-}

@@ -35,7 +35,7 @@ width: 100%;
     
     /*testo della typewriter*/
 .CTA {
-    font-family: 'Courier New', Courier, monospace;
+
     width: fit-content;
     height:auto;
     padding: 5px;
@@ -81,6 +81,11 @@ width: 100%;
 
   #typewriter-div-2{
     display: none;
+}
+
+.CTA-btn {
+  margin-top: 50px;
+margin-left: 20px;
 }
 
   
