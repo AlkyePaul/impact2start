@@ -1184,7 +1184,7 @@
 }
 
 .page-content {
-  margin: 40px auto;
+  margin: 30px auto;
 }
 .page-content h1 {
   font-size: 65px;
@@ -1193,6 +1193,7 @@
 .hero-banner {
   min-height: fit-content;
   height: 600PX;
+  margin-bottom: 100px;
   color: rgb(32, 33, 36);
 }
 .hero-banner .hero-content {
