@@ -195,6 +195,8 @@ footer{
     padding-left: 100px;
     justify-content: center;
     align-items: center !important;
+    p{text-align: center;
+    }
 
     .footer-item-1{
       flex: 1;
@@ -209,8 +211,7 @@ footer{
       padding-bottom: 5px;
       padding-top: 10px;
       margin-top: 10px;
-      p{text-align: center;
-    }}
+}
 
     .footer-item-3{
       flex:1;
@@ -220,8 +221,8 @@ footer{
 height: 300px;
     }
     img{
-      height: 300px;
-      width: 300px;
+      height: 250px;
+      width: 250px;
     }
 }
 

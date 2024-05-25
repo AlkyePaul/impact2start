@@ -1,6 +1,27 @@
 @import "config";
 
-.menu-container{
+.menu-container {
+  li {
+    padding: 25px 50px;
+    list-style: none;
+    
+    a {
+      text-decoration: none;
+      color: $light-text;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      padding: 10px 0px;
+      color: $secondary-color-light;
+      border-bottom: 2px solid $secondary-color-light;
+      
+    }
+
+    a:active {
+      color: $secondary-color-light;
+    }
+  }
     display: block;
     position: fixed;
     background-color: $back-color-2;
@@ -9,89 +30,68 @@
     width: 100%;
     border-bottom: solid 1px $border-color;
     z-index: 999;
+  }
 
-.menu-desktop{
-            display:flex;
-            justify-content:right;
-            padding-right: 1%;
-            a{
-                text-decoration: none;
-                color: $light-text;
-                text-transform: uppercase;
-            }
-                     
-            li{
-                padding: 25px 50px;
-                list-style: none;
 
-                a:hover{
-                  padding:10px 0px;
-                  color: $secondary-color;
-                    border-bottom: 3px solid $secondary-color;
-            }
-            a:active{
-              color:$secondary-color;
-            }
-        }
+  .menu-desktop {
+    display: flex;
+    justify-content: right;
+    padding-right: 1%;
+
+  }
+
+
+  .menu-mobile {
+    .hamburger {
+      display: block;
+      position: fixed;
+      top: 15px;
+      right: 80px;
+      z-index: 1000;
+      font-size: 15px;
+      /* Dimensione dell'icona */
+      color: $light-text;
+      text-align: center;
+
+
+      span {
+        text-align: center;
+        font-size: 30px
+      }
     }
 
-.menu-mobile{
-.hamburger {
-            display: block;
-            position: fixed;
-            top: 15px;
-            right: 80px;
-            z-index: 1000;
-            font-size: 15px; /* Dimensione dell'icona */
-            color:$light-text;
-            text-align: center;
-          
-           
-          span{
-            text-align: center;
-            font-size: 30px
-          }}
-          
-          .dropdown-menu{
-            display:none;
-            border:1px solid $border-color;
-          }
-          
-          .hamburger:hover .dropdown-menu{
-            display:block;
-            cursor: pointer;
-            position: fixed;
-            right:30px;
-            background-color:$back-color-2;
-           
-            z-index: 1000;
-                        .dropdown-item-mobile{
-                            list-style: none;
-                          margin-right: 0px auto;
-                            font-size: 1rem;
-                            text-indent: 1px;
-                            letter-spacing: 1px;    
-                            padding: 10px;
-                             a{
-                                color: $light-text;
-                                text-decoration: none;
-                             }
-                             a:hover{
-                              padding:10px 0px;
-                              color: $secondary-color;
-                                border-bottom: 3px solid $secondary-color;
-                        }
-                        a:active{
-                          color:$secondary-color;
-                        }
-                        }}
+    .dropdown-menu {
+      display: none;
+      border: 1px solid $border-color;
+    }
+
+    .hamburger:hover .dropdown-menu {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      right: 30px;
+      background-color: $back-color-2;
+
+      z-index: 1000;
+
+      .dropdown-item-mobile {
+        list-style: none;
+        margin-right: 0px auto;
+        font-size: 1rem;
+        text-indent: 1px;
+        letter-spacing: 1px;
+        padding: 10px;
+
+      }
+    }
   }
-  .logo{
-    background-color: $back-color-2;
-    position: fixed;
-    top: 30px;
-    left: 20px;
-    color: $light-text;
-    font-weight: bold;
-  }
+
+.logo {
+  background-color: $back-color-2;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  color: $light-text;
+  font-weight: normal;
+  font-size: 18px;
 }

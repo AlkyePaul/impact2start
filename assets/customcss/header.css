@@ -343,44 +343,6 @@
   color: #000;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  width: 5px;
-  background: #FF4D00;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #00ffff;
-  width: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #00ffff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-padding: 5rem;
-}
-
-a {
-  cursor: pointer;
-}
-
-h1, h2, h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 .menu-container {
   display: block;
   position: fixed;
@@ -391,47 +353,50 @@ h1, h2, h3 {
   border-bottom: solid 1px #E0E0E0;
   z-index: 999;
 }
-.menu-container .menu-desktop {
-  display: flex;
-  justify-content: right;
-  padding-right: 1%;
+.menu-container li {
+  padding: 25px 50px;
+  list-style: none;
 }
-.menu-container .menu-desktop a {
+.menu-container li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
 }
-.menu-container .menu-desktop li {
-  padding: 25px 50px;
-  list-style: none;
-}
-.menu-container .menu-desktop li a:hover {
+.menu-container li a:hover {
   padding: 10px 0px;
-  color: #FF4D00;
-  border-bottom: 3px solid #FF4D00;
+  color: orange;
+  border-bottom: 2px solid orange;
 }
-.menu-container .menu-desktop li a:active {
-  color: #FF4D00;
+.menu-container li a:active {
+  color: orange;
 }
-.menu-container .menu-mobile .hamburger {
+
+.menu-desktop {
+  display: flex;
+  justify-content: right;
+  padding-right: 1%;
+}
+
+.menu-mobile .hamburger {
   display: block;
   position: fixed;
   top: 15px;
   right: 80px;
   z-index: 1000;
-  font-size: 15px; /* Dimensione dell'icona */
+  font-size: 15px;
+  /* Dimensione dell'icona */
   color: white;
   text-align: center;
 }
-.menu-container .menu-mobile .hamburger span {
+.menu-mobile .hamburger span {
   text-align: center;
   font-size: 30px;
 }
-.menu-container .menu-mobile .dropdown-menu {
+.menu-mobile .dropdown-menu {
   display: none;
   border: 1px solid #E0E0E0;
 }
-.menu-container .menu-mobile .hamburger:hover .dropdown-menu {
+.menu-mobile .hamburger:hover .dropdown-menu {
   display: block;
   cursor: pointer;
   position: fixed;
@@ -439,7 +404,7 @@ h1, h2, h3 {
   background-color: #0E173B;
   z-index: 1000;
 }
-.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile {
+.menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile {
   list-style: none;
   margin-right: 0px auto;
   font-size: 1rem;
@@ -447,23 +412,13 @@ h1, h2, h3 {
   letter-spacing: 1px;
   padding: 10px;
 }
-.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a {
-  color: white;
-  text-decoration: none;
-}
-.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a:hover {
-  padding: 10px 0px;
-  color: #FF4D00;
-  border-bottom: 3px solid #FF4D00;
-}
-.menu-container .menu-mobile .hamburger:hover .dropdown-menu .dropdown-item-mobile a:active {
-  color: #FF4D00;
-}
-.menu-container .logo {
+
+.logo {
   background-color: #0E173B;
   position: fixed;
-  top: 30px;
-  left: 20px;
+  top: 25px;
+  left: 25px;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 18px;
 }
