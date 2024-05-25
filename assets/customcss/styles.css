@@ -1177,6 +1177,9 @@
 * h1, * h2, * h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+* .temporary-hide {
+  display: none;
+}
 
 .spacing-div {
   height: 100px;
