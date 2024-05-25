@@ -1129,12 +1129,11 @@
 }
 .btn:hover {
   transform: scale(0.97);
-  border-color: black;
 }
 .btn-primary {
   background-color: #0E173B;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active {
   background-color: #00ffff;
   color: rgb(32, 33, 36);
 }
@@ -1143,7 +1142,7 @@
 }
 .btn-secondary:hover {
   color: rgb(32, 33, 36);
-  background-color: #00ffff;
+  background-color: orange;
 }
 
 * {
