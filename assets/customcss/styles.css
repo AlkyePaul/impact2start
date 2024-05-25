@@ -1355,7 +1355,7 @@ footer img {
 }
 .sidebar .spotify {
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   top: 400px;
   margin: 50px 12px;
 }
@@ -2123,7 +2123,7 @@ form {
 form label {
   padding-top: 20px;
   padding-bottom: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 form input {
   border-color: #FF4D00;
