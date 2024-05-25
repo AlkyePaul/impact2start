@@ -14,8 +14,17 @@ console.log('I just ran');
 
 	  jQuery(document).ready(function($) {
       
+      //center accordions
       $(".accordion-button").click(function()
     { this.scrollIntoView({behavior: 'smooth', block: 'center' })})
+
+//scroll contact page after send 
+
+ $("#contact-form-submit").click(function() {
+  $("html, body").animate({ scrollTop: 0 });
+  return false;
+});
+   
    
     //hide contact form show success message
 
@@ -24,5 +33,7 @@ $("#contact-div").hide();
 $("#successMessage").show();
 });     
 
+
 //chiude jquery
 });
+
