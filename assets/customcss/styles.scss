@@ -74,7 +74,7 @@ width: 100%;
       h1{ font-size: 65px;
       }  
 
-        h1,h2, .social-icons{
+        h1,h2{
             margin-bottom: 20px;
         }}} 
 
@@ -233,8 +233,8 @@ height: 300px;
   top:100px;
   border-left: 1px solid $border-color;
   width: 260px;
-  height: 2500px;
-  z-index: -2;
+  height: 2000px;
+  z-index: 1;
 
 .ritratto {
   margin: 5px;
@@ -243,16 +243,43 @@ height: 300px;
 }
 .spotify{
   position: fixed;
-  z-index: 1;
-  top: 400px;
+  z-index: 100;
+  top: 430px;
   margin: 50px 12px;
+  p{
+    font-size: 0.8rem;
+  }
+}
+.social-icon-container{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px auto;
+  img{
+    cursor: pointer;
+    z-index: 20;
+  }}
+}
+.social-icon-container-sudime{
+  display: flex;
+  justify-content: left;
+  width: 25%;
+  max-width: 100px;
+  margin: 0px;
+  justify-content: space-around;
+  img{
+    cursor: pointer;
+    z-index: 20;
+  }
+.social-icon-{
+  margin-left: 20px;
 }}
 
 .ritratto-mobile {
   position: absolute;
-  right: 70px;
-  width: 150px; 
-  height: 150px; 
+  right: 30px;
+  width: 250px; 
+  height: 250px; 
 }
 
 
@@ -278,13 +305,11 @@ height: 300px;
   .typewriter-text{
     font-size: 22px;
   }
-
   .ritratto-mobile {
     position: absolute;
-    right: 470px;
+    right: 420px;
     width: 210px; height: 210px;}
-
-  }
+}
 
 
 
@@ -298,8 +323,16 @@ height: 300px;
   .typewriter-text{
     font-size: 22px;
   }}
-.mobile-only {display: none !important;}
+  .ritratto-mobile {
+    position: absolute;
+    right: 400px;
+    width: 210px; height: 210px;}
+
+    .mobile-only {display: none !important;}
+
   }
+
+
 
 
 

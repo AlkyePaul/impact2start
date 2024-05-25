@@ -1197,7 +1197,7 @@
 .hero-banner .hero-content h1 {
   font-size: 65px;
 }
-.hero-banner .hero-content h1, .hero-banner .hero-content h2, .hero-banner .hero-content .social-icons {
+.hero-banner .hero-content h1, .hero-banner .hero-content h2 {
   margin-bottom: 20px;
 }
 
@@ -1345,8 +1345,8 @@ footer img {
   top: 100px;
   border-left: 1px solid #E0E0E0;
   width: 260px;
-  height: 2500px;
-  z-index: -2;
+  height: 2000px;
+  z-index: 1;
 }
 .sidebar .ritratto {
   margin: 5px;
@@ -1355,16 +1355,45 @@ footer img {
 }
 .sidebar .spotify {
   position: fixed;
-  z-index: 1;
-  top: 400px;
+  z-index: 100;
+  top: 430px;
   margin: 50px 12px;
+}
+.sidebar .spotify p {
+  font-size: 0.8rem;
+}
+.sidebar .social-icon-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px auto;
+}
+.sidebar .social-icon-container img {
+  cursor: pointer;
+  z-index: 20;
+}
+
+.social-icon-container-sudime {
+  display: flex;
+  justify-content: left;
+  width: 25%;
+  max-width: 100px;
+  margin: 0px;
+  justify-content: space-around;
+}
+.social-icon-container-sudime img {
+  cursor: pointer;
+  z-index: 20;
+}
+.social-icon-container-sudime .social-icon- {
+  margin-left: 20px;
 }
 
 .ritratto-mobile {
   position: absolute;
-  right: 70px;
-  width: 150px;
-  height: 150px;
+  right: 30px;
+  width: 250px;
+  height: 250px;
 }
 
 .accordion {
@@ -2187,7 +2216,7 @@ form textarea {
   }
   .ritratto-mobile {
     position: absolute;
-    right: 470px;
+    right: 420px;
     width: 210px;
     height: 210px;
   }
@@ -2201,6 +2230,12 @@ form textarea {
   }
   .page-content .typewriter-text {
     font-size: 22px;
+  }
+  .ritratto-mobile {
+    position: absolute;
+    right: 400px;
+    width: 210px;
+    height: 210px;
   }
   .mobile-only {
     display: none !important;
